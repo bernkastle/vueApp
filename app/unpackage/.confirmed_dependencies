@@ -1,28 +1,28 @@
 {
-	"index.html": {
-		"resources": [
-			"js/mui.min.js",
-			"fonts/mui.ttf",
-			"css/mui.min.css",
-			"pages/login.html",
-			"pages/home.html",
-			"js/bundle.js",
-			"js/vue.js",
-			"js/vue-router.js"
-		],
-		"refer": [
-			"pages/login.html",
-			"pages/home.html"
-		]
-	},
-	"pages/login.html": {
-		"resources": [
-			"css/mui.min.css"
-		]
-	},
-	"pages/home.html": {
-		"resources": [
-			"css/mui.min.css"
-		]
-	}
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "pages/login.html",
+      "pages/home.html",
+      "js/bundle.js",
+      "js/vue.js",
+      "js/vue-router.js"
+    ],
+    "refer": [
+      "pages/login.html",
+      "pages/home.html"
+    ]
+  },
+  "pages/login.html": {
+    "resources": [
+      "css/mui.min.css"
+    ]
+  },
+  "pages/home.html": {
+    "resources": [
+      "css/mui.min.css"
+    ]
+  }
 }

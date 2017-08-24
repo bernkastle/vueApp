@@ -1,7 +1,6 @@
 <template>
     <div>
         <header class="mui-bar mui-bar-nav">
-            <a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
             <h1 class="mui-title">{{title}}</h1>
         </header>
 
@@ -36,6 +35,8 @@
 <script>
     export default {
         name: 'app',
+
+        //在app 加载的时候，为下部导航绑定tap事件， 直接使用router-link标签，不能工作，原因不明，可能是因为默认的标签事件被mui阻止
         mounted: function () {
             let self = this;
             mui('.mui-bar-tab').on('tap', 'a', function (e) {
@@ -43,12 +44,29 @@
                 let name = this.getAttribute('name');
                 self.$router.push(targetTab);
                 self.title = name;
-            })
+            });
+            self.$router.push('/home');
+
+            if(window.plus){
+                plusReady();
+            }else{
+                document.addEventListener("plusready",plusReady,false);
+            }
+
+
+//            let win = plus.webview.currentWebview();
+//            alert(plus.device.imei);
+//            win.setStyle({'scrollIndicator':'none'})
         },
         data(){
             return {
                 title: '首页'
             }
         }
+    }
+
+    function plusReady(){
+        let win = plus.webview.currentWebview();
+        win.setStyle({'scrollIndicator':'none'})
     }
 </script>

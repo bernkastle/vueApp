@@ -9,6 +9,7 @@ import order from './pages/order.vue'
 
 
 const router=[
+    {path:'/', redirect:'/home'},
     {path:'/home', component:home},
     {path:'/setting', component:setting},
     {path:'/order', component:order},

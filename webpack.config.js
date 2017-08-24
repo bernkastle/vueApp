@@ -9,6 +9,7 @@ module.exports = {
     entry: './src/main.js',
     output: {
         path: path.resolve(__dirname, "app/js"),
+        publicPath: 'app/',
         filename: 'bundle.js'
     },
     resolve: {
@@ -33,7 +34,7 @@ module.exports = {
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 use: [
-                    'url-loader?limit=10000',
+                    'url-loader?limit=10000&name=../img/[name].[ext]',
                     'img-loader'
                 ]
             },
