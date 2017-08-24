@@ -8,13 +8,13 @@ const webpack = require('webpack');
 module.exports = {
     entry: './src/main.js',
     output: {
-        path:path.resolve(__dirname, "app/js"),
-        filename:'bundle.js'
+        path: path.resolve(__dirname, "app/js"),
+        filename: 'bundle.js'
     },
-    resolve:{
+    resolve: {
         extensions: ['.js', '.vue'],
     },
-    module:{
+    module: {
         loaders: [
             {
                 test: /\.vue$/,
@@ -24,7 +24,7 @@ module.exports = {
                 // }
             },
             {
-                test:/\.css$/,
+                test: /\.css$/,
                 use: [
                     'style-loader',
                     'css-loader'
@@ -36,13 +36,23 @@ module.exports = {
                     'url-loader?limit=10000',
                     'img-loader'
                 ]
-            }
+            },
+            // {
+            //     test: /\.js$/,
+            //     exclude: /(node_modules|bower_components)/,
+            //     use: {
+            //         loader: 'babel-loader',
+            //         options: {
+            //             presets: ['env']
+            //         }
+            //     }
+            // }
         ]
     },
-    externals: {vue:"Vue", Router:"VueRouter"},
+    externals: {vue: "Vue", Router:'VueRouter'},
     plugins: [
 
         //new ExtractTextPlugin("style.css")
     ],
-    node: { fs: 'empty' },
+    node: {fs: 'empty'},
 };

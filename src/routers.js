@@ -4,10 +4,14 @@
 import Router from 'Router'
 
 import home from './pages/home.vue'
+import setting from './pages/setting.vue'
+import order from './pages/order.vue'
 
 
 const router=[
-    {path:'/home', component:home}
+    {path:'/home', component:home},
+    {path:'/setting', component:setting},
+    {path:'/order', component:order},
 ];
 
 export default new Router({

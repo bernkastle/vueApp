@@ -7,7 +7,8 @@
 			"pages/login.html",
 			"pages/home.html",
 			"js/bundle.js",
-			"js/vue.js"
+			"js/vue.js",
+			"js/vue-router.js"
 		],
 		"refer": [
 			"pages/login.html",
