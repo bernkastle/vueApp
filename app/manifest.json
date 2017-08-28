@@ -214,7 +214,8 @@
 					"pages/home.html",
 					"js/bundle.js",
 					"js/vue.js",
-					"js/vue-router.js"
+					"js/vue-router.js",
+					"css/iconfont.css"
 				],
 				"refer": [],
 				"priority": 0

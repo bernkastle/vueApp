@@ -47,12 +47,38 @@
             </div>
         </div>
 
-        <div id="test" style="padding-bottom: 1000px;background-color: #4cd964"></div>
+        <div class="table" style="padding: 10px 0">
+            <div class="table-cell mui-icon mui-icon-gear"></div>
+            <div class="table-cell mui-icon mui-icon-gear"></div>
+            <div class="table-cell mui-icon mui-icon-gear"></div>
+            <div class="table-cell mui-icon mui-icon-gear"></div>
+        </div>
+
+        <div class="table" style="padding: 10px 0">
+            <div class="table-cell"><img src="../img/brush.svg" alt="" style="width: 100%; height: 100%"></div>
+            <div class="table-cell mui-icon mui-icon-gear"></div>
+            <div class="table-cell mui-icon mui-icon-gear"></div>
+            <div class="table-cell mui-icon mui-icon-gear"></div>
+        </div>
     </div>
 </template>
 
 <style>
     .mui-slider-item img{
+    }
+    .table{
+        display: table;
+        width: 100%;
+    }
+    .table-cell{
+        display: table-cell;
+        width: 25%;
+        text-align: center;
+        height:24px ;
+    }
+    img{
+        margin: 0;
+        padding: 0;
     }
 </style>
 
